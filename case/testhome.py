@@ -17,8 +17,8 @@ class Testhome(unittest.TestCase):
         self.driver.quit()
 
     def test_clik_ordermanage(self):
-        self.login_driver.input_user("yijia")
-        self.login_driver.input_pwd("zhongfq")
+        self.login_driver.input_user("username")
+        self.login_driver.input_pwd("pwd")
         self.login_driver.click_login()
         time.sleep(10)
         self.home_driver.click_ordermanage()

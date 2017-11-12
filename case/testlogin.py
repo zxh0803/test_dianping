@@ -17,11 +17,11 @@ class Testlogin(unittest.TestCase):
 
     def test_login_01(self):
         self.driver.get("http://www.dianpingmedia.com/framework/OOH@XSystem-v.1.2/login/login.html")
-        self.login_driver.input_user('yijia')
-        self.login_driver.input_pwd('zhongfq')
+        self.login_driver.input_user('username')
+        self.login_driver.input_pwd('pwd')
         self.login_driver.click_login()
         time.sleep(5)
-        r = self.login_driver.is_success_login("yijia")
+        r = self.login_driver.is_success_login("username")
         self.assertTrue(r,msg=u"登陆失败")
 
 
